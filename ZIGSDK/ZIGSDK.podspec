@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Kamalesh" => "kamalesh@zed.digital" }
   spec.source       = { :git => "https://github.com/izeddevops/ZIGSDK.git", :tag => "#{spec.version}" }
   spec.ios.deployment_target = '13.0'
-  spec.source_files  = 'ZIGSDK/**/*.{swift}'
+  spec.source_files  = 'ZIGSDK/*.{swift}'
   spec.resource_bundles = {
     "ZIGSDKResources" => ["ZIGSDK/**/*.storyboard", "ZIGSDK/**/*.xcassets"]
 }
