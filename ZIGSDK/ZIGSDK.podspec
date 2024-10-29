@@ -12,12 +12,11 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '13.0'
   spec.source_files  = 'ZIGSDK/*.{swift}'
   spec.resource_bundles = {
-    "ZIGSDKResources" => ["ZIGSDK/**/*.storyboard", "ZIGSDK/**/*.xcassets"]
+    "ZIGSDK" => ["ZIGSDK/**/*.storyboard", "ZIGSDK/**/*.xcassets"]
 }
   spec.dependency 'Alamofire'
   spec.dependency 'CocoaMQTT'
   spec.dependency 'Realm'
   spec.dependency 'RealmSwift'
   spec.dependency 'MqttCocoaAsyncSocket'
-  spec.module_map = "ZIGSDK/module.modulemap"
 end
