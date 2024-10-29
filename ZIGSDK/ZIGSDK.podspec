@@ -5,17 +5,18 @@ Pod::Spec.new do |spec|
   spec.version      = "1.0.1"
   spec.summary      = "ZIG SDK for ticket validation"
   spec.description  = "This SDK includes ticket validation, toll validation, and user notifications with various functionalities for ticket management."
-  spec.homepage     = "https://github.com/izeddevops/ZIGSDK"
+  spec.homepage     = "https://github.com/Kamalguna972/ZIGSDK-1"
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author             = { "Kamalesh" => "kamalesh@zed.digital" }
-  spec.source       = { :git => "https://kamaleshguna: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@github.com/izeddevops/ZIGSDK.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/Kamalguna972/ZIGSDK-1.git", :tag => "1.0.1" }
   spec.ios.deployment_target = '13.0'
-  spec.source_files = 'ZIGSDK/ZIGSDK/ZIGSDK/*.swift'
+  spec.source_files = "MainClasses/**/*{h,m,swift}"
   spec.resources     = [
-                          'ZIGSDK/Assets.xcassets',
-                          'ZIGSDK/**/*.storyboard',
-                          'ZIGSDK/**/*.xib'
+    "ZIGSDK", "Resource/Assets.xcassets",
+    "ZIGSDK", "Resource/**/*.storyboard",
+    "ZIGSDK", "Resource/**/*.xib"
                        ]
+  spec.swift_version = '5.0'
   spec.dependency 'Alamofire'
   spec.dependency 'CocoaMQTT'
   spec.dependency 'Realm'
